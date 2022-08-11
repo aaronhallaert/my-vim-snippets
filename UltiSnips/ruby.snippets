@@ -1,0 +1,15 @@
+snippet break "Create breakpoint"
+require"debug";binding.break
+endsnippet
+
+
+snippet time_profile "Profile performance"
+start_$1 = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+Rails.logger.info ">>>>>>> #{start_$1} - start $1"
+
+
+
+end_$1 = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+Rails.logger.info "#{end_$1} - end $1"
+Rails.logger.info "<<<<<<< #{end_$1 - start_$1} - $1"
+endsnippet

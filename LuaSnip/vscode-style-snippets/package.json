@@ -1,0 +1,18 @@
+{
+  "name": "friendly-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "ruby",
+        "path": "./snippets/ruby.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/qualitydesk/markdown.json"
+      }
+    ]
+  }
+}
